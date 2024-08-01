@@ -1,41 +1,32 @@
-# Compiled Lua sources
-luac.out
+-- Define a target with position (x, y, z) [xyz are the predictions]
+print("Loading...")
+print("DM ME IN DISCORD:ZENNODER2 FOR BUG REPORTS!")
+--choose head,body,legs or Random (random is recommended)
+wait(3) --delays the execution by 3 secs
+local targets = {
+    {name = "Target1", head_position = {x = 10, y = 5, z = 2}},--predictions
+    {name = "Target2", head_position = {x = 15, y = 10, z = 3}},--predictions
+    {name = "Target3", head_position = {x = 20, y = 15, z = 4}}--predictions
+}
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+-- Define player's position
+local player_position = {x = 0, y = 0, z = 0}
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+-- Function to calculate the aim angle to the target
+function calculateAim(target_position)
+    local dx = target_position.x - player_position.x
+    local dy = target_position.y - player_position.y
+    local dz = target_position.z - player_position.z
 
-# Precompiled Headers
-*.gch
-*.pch
+    -- Calculate the angle (in radians) to aim at the target's head
+    local distance = math.sqrt(dx*dx + dy*dy + dz*dz)
+    local yaw = math.atan2(dy, dx) * (180 / math.pi
+    --if your game crshes that means ur game is not supported!
+    wait(2)
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+while false do
+local function gC()
+while true do 
+end
+end
+gC()
